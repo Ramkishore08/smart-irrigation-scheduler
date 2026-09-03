@@ -1,0 +1,11 @@
+Field,Crop Stage,Soil Moisture,Weather,Water Available,Priority,Decision,Reason,Recommended Water,Water Saved,Fairness
+t,Seedling,30,Sunny,100,High,Normal Irrigation,Conditions are suitable.,120,80,Highest Priority Allocated
+e,Seedling,10,Sunny,300,High,Irrigate Immediately,Soil moisture is critically low.,180,20,Highest Priority Allocated
+R,Seedling,10,Sunny,30,High,Irrigate Immediately,Soil moisture is critically low.,30,170,Highest Priority Allocated
+g,Seedling,20,Sunny,100,High,Irrigate Immediately,Soil moisture is critically low.,100,100,Highest Priority Allocated
+Field A,Vegetative,60,Sunny,200,Medium,Normal Irrigation,Conditions are suitable.,60,140,Balanced Allocation
+Field B,Vegetative,60,Rain,200,Medium,Do Not Irrigate,Rain is expected. Irrigation stopped.,0,200,Balanced Allocation
+Field B,Seedling,80,Sunny,500,High,Priority Irrigation,High priority field receives preference.,60,140,Highest Priority Allocated
+B,Seedling,99,Sunny,5000,High,Priority Irrigation,High priority field receives preference.,60,140,Highest Priority Allocated
+Field A,Vegetative,60,Sunny,200,Medium,Normal Irrigation,Conditions are suitable.,60,140,Balanced Allocation
+Field A,Seedling,60,Sunny,200,Medium,Do Not Irrigate,Water is reserved for a higher priority field.,0,200,Balanced Allocation
