@@ -100,42 +100,81 @@
                     {% set total_water = total_recommended_water + total_water_saved %}
 
                     {% if total_water > 0 %}
+
                         {% set recommended_percentage =
                             (total_recommended_water / total_water * 100) %}
+
                         {% set saved_percentage =
                             (total_water_saved / total_water * 100) %}
+
                     {% else %}
+
                         {% set recommended_percentage = 0 %}
                         {% set saved_percentage = 0 %}
+
                     {% endif %}
 
 
-                    <h6>Recommended Water</h6>
+                    <!-- Recommended Water -->
 
-                    <div class="progress mb-4" style="height: 35px;">
+                    <div class="mb-4">
 
-                        <div
-                            class="progress-bar bg-primary"
-                            role="progressbar"
-                            style="width: {{ recommended_percentage }}%;">
+                        <div class="d-flex justify-content-between mb-2">
 
-                            {{ total_recommended_water }} L
+                            <strong>
+                                Recommended Water
+                            </strong>
+
+                            <span>
+                                {{ total_recommended_water }} L
+                            </span>
+
+                        </div>
+
+
+                        <div class="progress" style="height: 30px;">
+
+                            <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width: {{ recommended_percentage }}%;">
+
+                                {{ total_recommended_water }} L
+
+                            </div>
 
                         </div>
 
                     </div>
 
 
-                    <h6>Water Saved</h6>
+                    <!-- Water Saved -->
 
-                    <div class="progress" style="height: 35px;">
+                    <div>
 
-                        <div
-                            class="progress-bar bg-success"
-                            role="progressbar"
-                            style="width: {{ saved_percentage }}%;">
+                        <div class="d-flex justify-content-between mb-2">
 
-                            {{ total_water_saved }} L
+                            <strong>
+                                Water Saved
+                            </strong>
+
+                            <span>
+                                {{ total_water_saved }} L
+                            </span>
+
+                        </div>
+
+
+                        <div class="progress" style="height: 30px;">
+
+                            <div
+                                class="progress-bar bg-success"
+                                role="progressbar"
+                                style="width: {{ saved_percentage }}%;">
+
+                                {{ total_water_saved }} L
+
+                            </div>
 
                         </div>
 
@@ -161,10 +200,14 @@
                 <div class="card-body text-center">
 
                     {% if total > 0 %}
+
                         {% set high_percentage =
                             (high_priority_fields / total * 100) %}
+
                     {% else %}
+
                         {% set high_percentage = 0 %}
+
                     {% endif %}
 
 

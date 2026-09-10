@@ -13,3 +13,6 @@ Field A,Seedling,100,Sunny,500,High,Priority Irrigation,High priority field rece
 field a,Seedling,100,Sunny,100,High,Priority Irrigation,High priority field receives preference.,60,140,Highest Priority Allocated
 Field A,Seedling,100,Sunny,200,High,Priority Irrigation,High priority field receives preference.,60,140,Highest Priority Allocated
 Field A,Seedling,90,Sunny,500,High,Priority Irrigation,High priority field receives preference.,60,140,Highest Priority Allocated
+Field A,Seedling,80,Sunny,100,High,Priority Irrigation,High priority field receives preference.,60,140,Highest Priority Allocated
+Field Y,Seedling,80,Sunny,90,High,Limited Irrigation,Water is limited. Irrigate only essential fields.,60,140,Highest Priority Allocated
+Field A,Seedling,80,Sunny,500,High,Priority Irrigation,High priority field receives preference.,60,140,Highest Priority Allocated
